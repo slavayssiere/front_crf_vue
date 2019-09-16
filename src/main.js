@@ -33,9 +33,9 @@ async function initConfig () {
   base.interceptors.response.use(function (response) {
     return response
   }, function (error) {
-    console.log(error, error.response.status)
+    console.log('interceptor', error, error.response.status)
     if (error.response.status === 401) {
-      if (store.getters.isAuthenticated()) {
+      if (store.getters.isAuthenticated) {
         store.commit('setAuthenticated', false)
       }
       console.log('redirect')

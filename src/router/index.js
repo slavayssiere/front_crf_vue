@@ -4,6 +4,7 @@ import Main from '@/components/Main'
 import BenevolesList from '@/components/BenevolesList'
 import BenevolesCompetence from '@/components/BenevolesCompetence'
 import BenevolesNonCompetence from '@/components/BenevolesNonCompetence'
+import BenevolesTC from '@/components/BenevolesTC'
 import RecyclageUL from '@/components/RecyclageUL'
 import RecyclageDT from '@/components/RecyclageDT'
 import StatsFormation from '@/components/StatsFormation'
@@ -26,6 +27,11 @@ export default new Router({
       path: '/benevoles/list',
       name: 'BenevolesList',
       component: BenevolesList
+    },
+    {
+      path: '/benevoles/tc',
+      name: 'BenevolesTC',
+      component: BenevolesTC
     },
     {
       path: '/benevoles/competence',
